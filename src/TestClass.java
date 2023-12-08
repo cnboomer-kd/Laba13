@@ -42,13 +42,17 @@ public class TestClass
 
 class Student
 {
-    private String name;
+    private static String name;
     private int iDNumber;
 
     public Student(String name, int iDNumber)
     {
         this.name = name;
         this.iDNumber = iDNumber;
+    }
+
+    public static String getName() {
+        return name;
     }
 
     public int getiDNumber()
